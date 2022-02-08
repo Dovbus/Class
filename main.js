@@ -17,7 +17,7 @@ class Storage {
 
       localStorage.setItem(this.key, JSON.stringify(rest));
     }
-    catch {
+    catch (err) {
       console.log('Out of local/session storage place');
     }
 
